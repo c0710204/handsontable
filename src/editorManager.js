@@ -304,7 +304,9 @@
 
         return;
       }
-
+      //hack for hot-table
+      if (priv.selRange==null)return;
+      //hack end
       var row = priv.selRange.highlight.row;
       var col = priv.selRange.highlight.col;
       var prop = instance.colToProp(col);
